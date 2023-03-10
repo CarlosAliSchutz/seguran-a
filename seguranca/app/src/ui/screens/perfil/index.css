@@ -1,0 +1,75 @@
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.profile-box {
+  align-items: flex-start;
+  padding: 40px 80px;
+}
+
+.profile-box img {
+  margin-bottom: 50px;
+}
+
+.profile-box h2{
+  margin: 0;
+  text-transform: none;
+  text-shadow: 1px 1px 2px black;
+}
+
+.profile-box h1 {
+  font-size: 50px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.logout {
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  margin-top: 10px;
+  left: 10px;
+  height: 30px;
+  width: 80px;
+  opacity: 0.5;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+  color: #03e9f4;
+  overflow: hidden;
+  transition: .5s;
+  background: none;
+  border: 0;
+}
+
+.edit-profile {
+  position: absolute;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 15px;
+  right: 20px;
+  height: 40px;
+  width: 200px;
+  opacity: 0.8;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+  color: #03e9f4;
+  overflow: hidden;
+  transition: .5s;
+  background: none;
+  border: 0;
+  top: 0;
+}
+
+.form-email {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+}

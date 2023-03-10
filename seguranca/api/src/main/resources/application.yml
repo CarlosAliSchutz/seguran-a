@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/seguranca
+    username: seguranca
+    password: seguranca
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: carlostesteseguranca@gmail.com
+    password: rhvtiubylppkugnk
+    protocol: smtp
+    tls: true
+    properties.mail.smtp:
+      auth: true
+      starttls.enable: true
+      ssl.trust: smtp.gmail.com
+server:
+  error:
+    include-message: always
+logging:
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
