@@ -46,6 +46,7 @@
   transition: .5s;
   background: none;
   border: 0;
+  font-weight: bold;
 }
 
 .edit-profile {
@@ -66,10 +67,13 @@
   background: none;
   border: 0;
   top: 0;
+  font-weight: bold;
 }
 
 .form-email {
   position: absolute;
   top: 0;
   cursor: pointer;
+  color: white;
+  font-weight: bold;
 }

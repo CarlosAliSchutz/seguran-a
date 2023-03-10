@@ -3,17 +3,15 @@ import { useSenha } from "../../../api/user/esqueciSenha.api";
 import { Button, Input } from "../../components";
 import "./index.css";
 
-export function EsqueciSenhaScreen() {
-const { postEsqueciSenha } = useSenha();
-const [email, setEmail] = useState();
+export function SolicitarTrocaScreen() {
+  const { postEsqueciSenha } = useSenha();
+  const [email, setEmail] = useState();
 
+  function handleSenha(event) {
+    event.preventDefault();
 
-function handleSenha(event) {
-  event.preventDefault();
-
-  postEsqueciSenha(email);
-}
-
+    postEsqueciSenha(email);
+  }
 
   return (
     <form className="form-senha-email" onSubmit={handleSenha}>
@@ -25,7 +23,7 @@ function handleSenha(event) {
         value={email}
         onChange={(event) => setEmail(event.target.value)}
       />
-      <Button>Enviar</Button>
+      <Button className="form-senha-button">Enviar</Button>
     </form>
   );
 }

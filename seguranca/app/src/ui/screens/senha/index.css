@@ -16,3 +16,21 @@
 .form-senha-email button {
   margin: 5px 0;
 }
+
+.form-senha-button {
+  border-radius: 3px;
+  height: 30px;
+  width: 70px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
+  border: none;
+}
+
+.form-senha-button:hover {
+  background: #d3d3d3;
+}
+
+.form-senha-email label {
+  margin-right: 10px;
+}

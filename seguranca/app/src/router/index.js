@@ -27,6 +27,6 @@ export const router = createBrowserRouter([
   },
   {
     path: "/redefinir-senha/:token",
-    element: <MudarSenhaScreen />,
+    element: <PrivateRoute Screen={MudarSenhaScreen} />,
   },
 ]);
